@@ -1,0 +1,65 @@
+
+
+.header{
+ background-color: #282828;
+ padding-bottom: 20px;  
+}
+
+.logo{
+    font-family: 'BioRhyme', serif;
+    font-stretch: expanded;
+    font-size-adjust: auto;
+    font-weight: 500;
+}
+
+body{
+     background-color: #F7F7F7;
+    font-family: 'Slabo 27px', serif;
+}
+
+.content{
+ background-color: #333333;
+}
+
+
+/*All things fonts*/
+h1{
+   color: #CCCCCC;    
+   font-size: 2.5 rem;     
+}
+
+h2, h3, h4{
+  color: #A55F00;   
+}
+
+p{
+   color: #CCCCCC;    
+   font-size: 1.5em;    
+}
+
+/* -----------------  */
+
+.content{
+   padding-top:  50px;
+}
+
+.myimage{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    margin-left:30%;
+    
+}
+
+.myinfo{
+   
+    font-size:1em;
+    margin-bottom: 400px;
+    
+}
+
+.footer{
+    padding:100px;
+    background-color: #282828;
+}
+
