@@ -4,11 +4,21 @@ import TableComp from '../components/TableComp'
 
 
 class SearchGrid extends Component {
+
+  constructor(props){
+    super(props);
+    this.handleSearchClicked = this.handleSearchClicked.bind(this);
+  }
+
+  handleSearchClicked(searchedText){
+      this.props.searchText = searchText;
+  }
+
   render() {
     return (
       <div className="container">
-        <SearchComp/>
-        <TableComp/>
+        <SearchComp onSearchButtonClick={this.handleSearchClicked}/>
+        <TableComp searchText={this.searchText}/>
       </div>
 
     );

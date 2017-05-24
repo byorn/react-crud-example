@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
+import SearchGrid from './SearchGrid';
 import CSSButtons from './components/CSSButtons';
 import ES6 from './components/ES6';
 import Basic from './components/Basic';
@@ -21,7 +22,7 @@ class MainMenu extends Component {
             </div>
             <div className="col-md-10">
 
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/" component={SearchGrid}/>
                 <Route path="/cssButtons" component={CSSButtons}/>
                 <Route path="/es6" component={ES6}/>
                 <Route path="/basic" component={Basic}/>
