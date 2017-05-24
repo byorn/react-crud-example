@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
-import SearchGrid from './SearchGrid';
+import SearchGrid from './components/SearchGrid';
 import CSSButtons from './components/CSSButtons';
 import ES6 from './components/ES6';
 import Basic from './components/Basic';

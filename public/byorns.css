@@ -2,7 +2,7 @@
 
 .header{
  background-color: #282828;
- padding-bottom: 20px;  
+ padding-bottom: 20px;
 }
 
 .logo{
@@ -15,6 +15,11 @@
 body{
      background-color: #F7F7F7;
     font-family: 'Slabo 27px', serif;
+
+}
+
+table tr th, table tr td {
+   color: #CCCCCC;
 }
 
 .content{
@@ -24,17 +29,17 @@ body{
 
 /*All things fonts*/
 h1{
-   color: #CCCCCC;    
-   font-size: 2.5 rem;     
+   color: #CCCCCC;
+   font-size: 2.5 rem;
 }
 
 h2, h3, h4{
-  color: #A55F00;   
+  color: #A55F00;
 }
 
 p{
-   color: #CCCCCC;    
-   font-size: 1.5em;    
+   color: #CCCCCC;
+   font-size: 1.5em;
 }
 
 /* -----------------  */
@@ -48,18 +53,17 @@ p{
     width: 40%;
     height: 40%;
     margin-left:30%;
-    
+
 }
 
 .myinfo{
-   
+
     font-size:1em;
     margin-bottom: 400px;
-    
+
 }
 
 .footer{
     padding:100px;
     background-color: #282828;
 }
-

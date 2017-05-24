@@ -30,14 +30,14 @@ const DisplayNameWithPropsObj = (props) => (
 class Basic extends Component {
   render() {
     return (
-      <div className="Menu">
-        <p>Going to Print the FullName By calling a function {formatName(user)}</p>
-        <Welcome name={formatName(user)} />
-        <DisplayName simpleName="Another Name" />
-        <DisplayNameWithPropsObj person={Person}/>
-        <ReusableComp type="Text Type"/>
+      <ul>
+        <li>Calling a function:  {formatName(user)}</li>
+        <li>Passing a name to a component: <Welcome name={formatName(user)} /> </li>
+        <li>Passing a name to an inline component: (i.e. function component in the same class file) <DisplayName simpleName="Byorn de Silva" /> </li>
+        <li>Passing an object to a component: <DisplayNameWithPropsObj person={Person}/> </li>
+        <li>Passing different types of attributes to a component class, where props have been initialized in the constructor: <ReusableComp type="Text Type"/> </li>
 
-      </div>
+      </ul>
 
     );
   }

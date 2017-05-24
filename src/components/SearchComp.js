@@ -8,22 +8,19 @@ class SearchComp extends Component {
  }
 
  handleSearchButtonClick(e) {
-    this.props.onSearchButtonClick(e.target.value);
+    this.props.onSearchButtonClick(document.getElementById("searchTxt").value);
  }
 
   render() {
     return (
-      <div className="row">
-         <input  type="text"  placeholder="Search..."  value={this.props.searchText}/>
+     <div>
+         <input  id="searchTxt" type="text"  placeholder="Search..." />
          <button onClick={this.handleSearchButtonClick}>search</button>
-      </div>
+    </div>
 
     );
   }
 }
 
 
-
-
-//needed
 export default SearchComp;
