@@ -1,8 +1,15 @@
 import React from 'react';
 
+const helloWorld = () => (
+
+    <span>hello world </span>
+)
 
 const ES6 = () => (
-    <p>Arrow Function</p>
+  <div>
+    <p>Arrow Function {helloWorld()}</p>
+    <p>const ES6 = () => (console.log('blah')); </p>
+  </div>
 )
 
 //needed

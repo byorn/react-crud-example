@@ -9,8 +9,13 @@ class TableComp extends Component {
 
 
   render() {
-    return (
 
+    let rows = [];
+    let productItems = this.props.productItems;
+    productItems.map(x =>
+      rows.push(<tr><td>{x}</td><td>{x}</td><td>{x}</td></tr>)
+    );
+    return (
       <Table responsive>
          <thead>
            <tr>
@@ -20,14 +25,9 @@ class TableComp extends Component {
            </tr>
          </thead>
          <tbody>
-              <tr>
-                <td>1</td>
-                <td>{this.props.selectedSearchText} </td>
-                <td></td>
-              </tr>
+              {rows}
        </tbody>
     </Table>
-
     );
   }
 }

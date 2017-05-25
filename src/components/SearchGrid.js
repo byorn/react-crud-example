@@ -6,6 +6,7 @@ import TableComp from '../components/TableComp'
 class SearchGrid extends Component {
 
 
+
   constructor(props){
     super(props);
     this.state = {
@@ -15,21 +16,26 @@ class SearchGrid extends Component {
 
   }
 
+
+
   handleSearchClicked(search){
       this.setState({
         searchText: search
-      })
+      });
 
   }
 
   render() {
+
+   var abc = ['a','b','c'];
+
     return (
       <div>
         <div className="row">
             <SearchComp onSearchButtonClick={this.handleSearchClicked}/>
         </div>
         <div className="row">
-        <TableComp selectedSearchText={this.state.searchText}/>
+        <TableComp productItems={abc} selectedSearchText={this.state.searchText}/>
         </div>
       </div>
 
