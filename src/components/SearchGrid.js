@@ -10,12 +10,16 @@ class SearchGrid extends Component {
   constructor(props){
     super(props);
     this.state = {
-      searchText: ''
+      searchText: '',
     }
     this.handleSearchClicked = this.handleSearchClicked.bind(this);
 
   }
 
+
+  this.productItems = [{id:'LAP1',name:'Laptop PC',price:'1500AUD'},
+                 {id:'DES1',name:'Desktop PC',price:'1100AUD'},
+               ];
 
 
   handleSearchClicked(search){
@@ -27,18 +31,15 @@ class SearchGrid extends Component {
 
   render() {
 
-   var abc = ['a','b','c'];
-
     return (
       <div>
         <div className="row">
             <SearchComp onSearchButtonClick={this.handleSearchClicked}/>
         </div>
         <div className="row">
-        <TableComp productItems={abc} selectedSearchText={this.state.searchText}/>
+        <TableComp productItems={this.productItems} selectedSearchText={this.state.searchText}/>
         </div>
       </div>
-
     );
   }
 }

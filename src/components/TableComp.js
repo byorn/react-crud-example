@@ -12,22 +12,30 @@ class TableComp extends Component {
 
     let rows = [];
     let productItems = this.props.productItems;
-    productItems.map(x =>
-      rows.push(<tr><td>{x}</td><td>{x}</td><td>{x}</td></tr>)
+    productItems.map(product =>
+      rows.push(<tr><td>{product.id}</td><td>{product.name}</td><td>{product.price}</td></tr>)
     );
+
+    const gridTitle = this.props.selectedSearchText == "" ? "": <span>Searching {this.props.selectedSearchText} </span>
+
     return (
-      <Table responsive>
-         <thead>
-           <tr>
-             <th>#</th>
-             <th>Table heading</th>
-             <th>Table heading</th>
-           </tr>
-         </thead>
-         <tbody>
-              {rows}
-       </tbody>
-    </Table>
+      <div>
+
+        {gridTitle}
+
+        <Table responsive>
+           <thead>
+             <tr>
+               <th>Code</th>
+               <th>Name</th>
+               <th>Price</th>
+             </tr>
+           </thead>
+           <tbody>
+                {rows}
+         </tbody>
+      </Table>
+      </div>
     );
   }
 }
