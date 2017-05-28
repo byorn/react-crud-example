@@ -1,5 +1,6 @@
 {
   "name": "react-crud-example",
+  "homepage":"http://www.byorns.com/react-crud-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

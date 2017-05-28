@@ -23,6 +23,7 @@ class MainMenu extends Component {
             <div className="col-md-10">
 
                 <Route exact path="/" component={SearchGrid}/>
+                <Route exact path="/react-crud-example" component={SearchGrid}/>
                 <Route path="/cssButtons" component={CSSButtons}/>
                 <Route path="/es6" component={ES6}/>
                 <Route path="/basic" component={Basic}/>

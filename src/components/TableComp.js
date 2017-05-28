@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table } from 'react-bootstrap';
+import { Table,Button } from 'react-bootstrap';
 class TableComp extends Component {
 
  constructor(props){
@@ -13,7 +13,7 @@ class TableComp extends Component {
     let rows = [];
     let productItems = this.props.productItems;
     productItems.map(product =>
-      rows.push(<tr><td>{product.id}</td><td>{product.name}</td><td>{product.price}</td></tr>)
+      rows.push(<tr key={product.id}><td>{product.id}</td><td>{product.name}</td><td>{product.price}</td></tr>)
     );
 
     const gridTitle = this.props.selectedSearchText == "" ? "": <span>Searching {this.props.selectedSearchText} </span>
