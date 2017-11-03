@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import SearchGrid from './components/SearchGrid';
 import CSSButtons from './components/CSSButtons';
-import ES6 from './components/ES6';
+import StateManagement from './components/StateManagement';
 import Basic from './components/Basic';
 
 class MainMenu extends Component {
@@ -14,19 +14,19 @@ class MainMenu extends Component {
           <div className="row">
             <div className="col-md-2">
                 <ul>
-                <li><Link to="/">CRUD EXample</Link></li>
-                <li><Link to="/cssButtons">Bootstrap Stuff</Link></li>
-                <li><Link to="/es6">ES6 Code</Link></li>
-                <li><Link to="/basic">Basic</Link></li>
+                <li><Link to="/">Menu 1</Link></li>
+                <li><Link to="/menu2">Menu 2</Link></li>
+                <li><Link to="/menu3">Menu 3</Link></li>
+
                 </ul>
             </div>
             <div className="col-md-10">
 
                 <Route exact path="/" component={SearchGrid}/>
                 <Route exact path="/react-crud-example" component={SearchGrid}/>
-                <Route path="/cssButtons" component={CSSButtons}/>
-                <Route path="/es6" component={ES6}/>
-                <Route path="/basic" component={Basic}/>
+                <Route path="/menu2" component={CSSButtons}/>
+                <Route path="/menu3" component={StateManagement}/>
+
           </div>
         </div>
       </div>

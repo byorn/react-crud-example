@@ -25,7 +25,7 @@ handleSearchInputChange(e){
          <FormControl type="text" id="searchTxt" placeholder="Search..." onChange={this.handleSearchInputChange}/>
          </div>
            <div className="col-md-1">
-         <Button bsStyle="primary" bsSize="medium" onClick={this.handleSearchButtonClick}>
+         <Button bsStyle="primary"  onClick={this.handleSearchButtonClick}>
            Search
          </Button>
        </div>

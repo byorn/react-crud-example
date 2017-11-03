@@ -53,7 +53,7 @@ class AddComp extends Component {
   render() {
     return (
       <div>
-        <Button bsStyle="primary" bsSize="medium" onClick={this.open} id="show">
+        <Button bsStyle="primary"  onClick={this.open} id="show">
           Add
         </Button>
 

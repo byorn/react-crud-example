@@ -26,9 +26,8 @@ export default StyleSheet.create({
     "table tr td": {
         "color": "#CCCCCC"
     },
-    "content": {
-        "backgroundColor": "#333333",
-        "paddingTop": 50
+    "span": {
+        "color": "#CCCCCC"
     },
     "h1": {
         "color": "#CCCCCC",
@@ -47,11 +46,15 @@ export default StyleSheet.create({
         "color": "#CCCCCC",
         "fontSize": 1.5
     },
-    "myimage": {
-        "borderRadius": "50%",
-        "width": "40%",
-        "height": "40%",
-        "marginLeft": "30%"
+    "content": {
+        "paddingTop": 50,
+        "backgroundColor": "#333333"
+    },
+    "more-verticle-space": {
+        "paddingBottom": "20%"
+    },
+    "margin-left-15": {
+        "paddingLeft": 15
     },
     "myinfo": {
         "fontSize": 1,
